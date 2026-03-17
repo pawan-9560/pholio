@@ -25,7 +25,8 @@ const greeting = {
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs/ Nextjs / Nodejs / Expressjs/ MongoDB/ MySql/ SQL/ Dataware Housing/ Gocd Pipeline and some other cool libraries and frameworks."
   ),
-  resumeLink:"https://drive.google.com/file/d/1-CUz09T86c3odXpV30fIC1c3wichr5Fx/view?usp=drive_link", // Set to empty to hide the button
+  resumeLink:
+    "https://drive.google.com/file/d/1-CUz09T86c3odXpV30fIC1c3wichr5Fx/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -65,7 +66,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "css3",
       fontAwesomeClassname: "fab fa-css3-alt"
-    },    
+    },
     {
       skillName: "bootstrap",
       fontAwesomeClassname: "fab fa-bootstrap"
@@ -125,6 +126,10 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "bitbucket",
       fontAwesomeClassname: "fab fa-bitbucket"
+    },
+    {
+      skillName: "nestjs",
+      fontAwesomeClassname: "fab fa-server"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -156,8 +161,6 @@ const educationInfo = {
   ]
 };
 
-// Your top 3 proficient stacks/tech experience
-
 const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
@@ -182,36 +185,30 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    // {
-    //   role: "Software Engineer",
-    //   company: "Facebook",
-    //   companylogo: require("./assets/images/facebookLogo.png"),
-    //   date: "June 2018 – Present",
-    //   desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    //   descBullets: [
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    //     "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-    //   ]
-    // },
     {
       role: "Full Stack Developer",
-      company: "VivaSwan",
-      companylogo: require("./assets/images/pwa.webp"),
-      date: "Feb 2025 – Present",
-      desc: "Working as a Full Stack Developer at VivaSwan, responsible for designing, developing, and maintaining scalable web applications. Key responsibilities include front-end and back-end development, API integration, and optimizing application performance for seamless user experience."
+      company: "Last Mile Care",
+      companylogo: require("./assets/images/LMC_logo1.png"),
+      date: "Sep 2025 – Present",
+      desc: "Working as a Full Stack Developer, contributing to both frontend (40%) and backend (60%) development. Responsible for building and maintaining scalable healthcare applications, developing APIs, optimizing performance, and ensuring seamless user experience across systems."
+    },
+    {
+      role: "Full Stack Devc:\Users\Dell\Downloads\coolr.jpegeloper",
+      company: "bookingcabs.in",
+      companylogo: require("./assets/images/bookingcab.png"),
+      date: "Apr 2025 – Sep 2025",
+      desc: "Worked on rewriting the legacy BookingCabs platform into a modern, scalable architecture. Contributed to both frontend and backend development, including API design, system optimization, and improving overall application performance and maintainability."
     },
     {
       role: "Full Stack Developer",
       company: "Spaxa Solution Pvt Ltd",
       companylogo: require("./assets/images/Spraxa_logo.png"),
       date: "Mar 2021 – Dec 2024",
-      desc: "Led the development of web solutions, handling both client-side and server-side architecture. Built dynamic applications, collaborated with cross-functional teams, and implemented modern technologies to enhance efficiency and scalability."
+      desc: "Led the development of web applications, handling both client-side and server-side architecture. Built dynamic and scalable solutions, collaborated with cross-functional teams, and implemented modern technologies to improve efficiency and system performance."
     }
   ]
 };
 
-/* Your Open Source Section to View Your Github Pinned Projects
-To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
@@ -225,7 +222,20 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/bookingcab.png"),
+      projectName: "Bookingcabs",
+      projectDesc:
+        "BookingCabs.in is a technology-driven platform where I contributed to transforming a legacy cab booking system into a modern, scalable, and high-performance application.",
+      footerLink: [
+        {
+          name: "Visit Website",
+          url: "https://bookingcabs.in/"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image: require("./assets/images/volza.png"),
       projectName: "Volza",
       projectDesc:
         "Volza is a highly innovative and fast-paced startup that is changing the face of international trade and business research.",
@@ -238,7 +248,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/coolr.png"),
       projectName: "Coolr",
       projectDesc:
         "CoolR Group is incorporated in the USA but we operate globally. We have developed talent hubs in the USA,  Europe.",
@@ -250,7 +260,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/ready.png"),
       projectName: "Ready Tracker",
       projectDesc:
         "A Steris project that manages patient data, handles patient tissue expiration, and other hospital-related tasks.",
@@ -262,7 +272,7 @@ const bigProjects = {
       ]
     },
     {
-      image: require("./assets/images/googleAssistantLogo.webp"),
+      image: require("./assets/images/landstar_agency_logo.png"),
       projectName: "TLS",
       projectDesc:
         "Total Logistics Services, LLC specializes in providing freight shipping solutions whenever and wherever you need it.",
@@ -366,7 +376,9 @@ const blogSection = {
 
 const talkSection = {
   title: "Mentorship & Experience",
-  subtitle: emoji("I had the privilege of working under the guidance of Durlabh Jain, a passionate Full Stack Developer, during my time at Spraxa Solution pvt Ltd. His mentorship helped me refine my skills in Debugging and Implementing new tech. 😅"),
+  subtitle: emoji(
+    "I had the privilege of working under the guidance of Durlabh Jain, a passionate Full Stack Developer, during my time at Spraxa Solution pvt Ltd. His mentorship helped me refine my skills in Debugging and Implementing new tech. 😅"
+  ),
 
   talks: [
     {
@@ -378,7 +390,6 @@ const talkSection = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
 
 // Podcast Section
 
